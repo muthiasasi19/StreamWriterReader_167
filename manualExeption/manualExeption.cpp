@@ -8,4 +8,17 @@ int main()
 		cout << "Pernyataan tidak akan dieksekusi" << endl;
 
 	}
+
+	catch (int a){
+		//blok ini akan dieksekusi
+		cout << "Pengecualian akan dieksekusi"<< endl;
+
+	}
+
+	catch (...) {
+		// Jika selain integer maka blok ini akan dieksekusi
+		cout << "default Pengecualian dieksekusi" << endl;
+	}
+
+	return 0;
 }
