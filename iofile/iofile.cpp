@@ -36,4 +36,15 @@ int main() {
 	//menunjuk ke sebuah file
 	infile.open("contohfile.txt");
 	cout << endl << ">= membuka dan membaca file" << endl;
+
+	//jika file tidak ada maka
+	if (infile.is_open())
+	{
+		// melakukan perulangan setiap baris
+		while (getline(infile, baris))
+		{
+			// dan tampilkan disini
+			cout << baris << '\n';
+		}
+	}
 }
